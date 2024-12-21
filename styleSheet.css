@@ -1,0 +1,373 @@
+﻿
+
+/* style de la page en general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+}
+:root {
+    --primary-color: #000;
+    --secondary-color: #ffffff;
+    --font-stack: Arial, sans-serif;
+    --base-spacing: 1rem;
+    --navbar-bg-color: white;
+    --navbar-link-color: #ffffff;
+    --navbar-link-hover-color: #d30000;
+}
+
+
+/*header*/
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    min-height: 10%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    z-index: 100;
+    margin: 0;
+}
+
+.header-logo {
+    height: 100px;
+}
+
+.header h2 {
+    font-size: 28px ;
+    color: var(--secondary-color);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 50px;
+}
+
+
+.nav-logo {
+    color: var(--navbar-bg-color);
+}
+
+.nav-link {
+    color: var(--navbar-link-color);
+    position: relative;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background: var(--navbar-link-hover-color);
+    transition: width 0.2s ease-out, left 0.2s ease-out;
+}
+
+
+ .nav-link:hover {
+    color: var(--navbar-link-hover-color);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.section-1 {
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.section-1 h2{
+    font-size: 40px;
+}
+
+
+.section-2 {
+    min-height: 100vh;
+    background-color: #faf7f7;
+}
+
+.magasin-exterieur  {
+    display: flex;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.scrollable-content {
+    height: 100vh;
+    overflow-y: scroll; /* Permet le défilement vertical */
+    /*-webkit-overflow-scrolling: touch; /* Adoucit le défilement sur les appareils tactiles */
+}
+.scrollable-content {
+    scrollbar-width: none; /* Cache la barre de défilement sur Firefox */
+    -ms-overflow-style: none; /* Cache la barre de défilement sur IE et Edge */
+}
+
+
+
+.hero-text {
+    flex: 1;
+    padding: 10px;
+}
+
+.hero-image {
+    flex: 1.5;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50px);
+}
+
+.image img {
+    max-width: 80%;
+    height: auto;
+}
+
+.hero-text-2 {
+    background-color: yellow;
+    margin-top: 80px;
+}
+
+.section-3 {
+    min-height: 100vh;
+    background-color: #fff;
+    margin-bottom: 2rem;
+}
+.section-3-texte-h2{
+    font-size: 32px;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.section-3-texte-p{
+    font-size: 24px;
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+
+.section-4 {
+    min-height: 100vh;
+    background-color: #faf7f7;
+}
+
+.section-5 {
+    padding: 20px;
+    background-color: #fff;
+}
+
+#car-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.car-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 220px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.car-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer; /* Le curseur change pour indiquer que l'image est cliquable */
+}
+
+.description-moto {
+    list-style-type: disc; /* Définit le type de puce. 'disc' est pour les puces solides */
+    padding-left: 20px; /* Ajoute un espace à gauche de la liste pour les puces */
+    text-align: left; /* Assure que le texte est aligné à gauche */
+}
+
+.description-moto-item {
+    margin-bottom: 5px;
+}
+
+.car-item h2 {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0 5px;
+}
+
+.car-item p {
+    font-size: 16px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.car-item .price {
+    font-size: 18px;
+    color: #0821a1;
+    margin: 10px 0;
+}
+
+.car-item .kilometers {
+    font-size: 16px;
+    color: #9c0539;
+    margin: 10px 0;
+}
+
+.car-item .date {
+    font-size: 16px;
+    color: #0a4500;
+    margin: 10px 0;
+}
+
+.car-item .car-name {
+    text-align: center;
+}
+
+/* Styles pour la modal */
+.modal {
+    display: none; /* Caché par défaut */
+    position: fixed;
+    z-index: 1000;
+    left: 15%;
+    top: 15%;
+    width: 70%;
+    height: 70%;
+    overflow: auto;
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 3px;
+    width: 70%; /* Défini à 50% de la taille de l'écran */
+    max-width: 380px;
+    background-color: #000;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Styles pour les boutons du carrousel */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 50%;
+}
+
+.carousel-button.prev {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.carousel-button.next {
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+#map {
+    height: 500px; /* Définir la hauteur de la carte */
+    width: 500px; /* Définir la largeur de la carte */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-form-adresse {
+    display: flex;
+    align-items: center;
+}
+
+.contact-form-adresse div {
+    margin-right: 10px; /* Espacement entre les divs */
+}
+
+.contact-form p {
+    font-size: 1.2em;
+}
+
+.contact-form-telephone {
+    color: #333;
+}
+
+#email-hyperlink {
+    text-align: center;
+    font-size: 1.2em; /* Taille de l'emoji et du texte */
+    margin-top: 0.5em;
+}
+
+#email-hyperlink a{
+    color: #000000;
+}
+
+
+.contact-form-telephone{
+    display: flex;
+    gap: 3px;
+}
+
+.contact-form-map   {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+

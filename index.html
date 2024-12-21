@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Magasin, vente entretien et raparation de moto Lyon sud ">
+    <meta name="keywords" content="vente, entretien, reparation, moto, motorbike, Lyon">
+    <title>Maison de l'atelier motocycles</title>
+    <link rel="stylesheet" href="styleSheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+</head>
+<body>
+    <header class="header">
+        <h2>
+            Maison de l'Atelier Motocycles
+        </h2>
+        <a href="#site" class="smooth-scroll">
+                <img src="logo.jpg" alt="Logo" class="header-logo">
+        </a>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#magasin" class="nav-link smooth-scroll">Magasin</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ventes" class="nav-link smooth-scroll">Ventes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#entretien" class="nav-link smooth-scroll">Entretien</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link smooth-scroll">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="scrollable-content" id="scroll-container">
+        <section id="site" class="section-1" >
+            <div class="hero-text">
+                <div class="hero-text-1">
+                    <h2>
+                        UNE EQUIPE DE PASSIONNÉS POUR FAIRE VIVRE ET PARTAGER L'AMOUR DE LA MOTO
+                    </h2>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="moto.png" alt="Atelier maison motocycles - moto - motorbike">
+            </div>
+        </section>
+        <section id="magasin" class="section-2" >
+            <div class="section-3-texte">
+                <h2 class="section-3-texte-h2">NOTRE MAGASIN</h2>
+            </div>
+            <div class="magasin-exterieur">
+                <div class="hero-image">
+                    <img src="magasin-1.png" alt="Atelier maison motocycles - moto - motorbike">
+                </div>
+                <div class="hero-text">
+                    <h2>Texte du magasin</h2>
+                </div>
+            </div>
+        </section>
+        <section class="section-3" id="ventes">
+            <div class="section-3-texte">
+                <h2 class="section-3-texte-h2">MOTOS À VENDRE</h2>
+                <p class="section-3-texte-p">Toutes les motos sont disponibles dans notre showroom.</p>
+            </div>
+            <div id="car-list">
+
+            </div>
+
+        </section>
+        <section id="entretien" class="section-4">
+            <div class="section-3-texte">
+                <h2 class="section-3-texte-h2">NOTRE ATELIER</h2>
+            </div>
+        </section>
+
+        <section id="contact" class="section-5">
+            <div class="section-3-texte">
+                <h2 class="section-3-texte-h2">CONTACT</h2>
+            </div>
+            <div class="contact-form">
+                <div class="contact-form-adresse">
+                    <div>
+                        <p>📅</p>
+                    </div>
+                    <div>
+                        <p>340 Route de Verlieu</p>
+                        <p>42410 Saint-Michel-sur-Rhône</p>
+                        <p>France</p>
+                    </div>
+                </div>
+                <div class="contact-form-telephone">
+                    <p>📞</p>
+                    <p>04 74 85 54 49</p>
+                </div>
+                </div>
+                <div id="email-hyperlink"></div>
+                <div class="contact-form-map">
+                    <div id="map" ></div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="index.js"></script>
+    <script src="motos.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>
