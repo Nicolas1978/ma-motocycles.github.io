@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             name: 'Guzzi V7 II spécial',
             images: [
-                '/Images/guzzi-1.jpg',
-                '/Images/guzzi-2.jpg',
-                '/Images/guzzi-3.jpg'
+                'Images/guzzi-1.jpg',
+                'Images/guzzi-2.jpg',
+                'Images/guzzi-3.jpg'
             ],
             description: ['rétroviseur embout de guidon', 'guidon LSL', 'selle mono (moto guzzi) origine disponible'],
             kilometers: '15 306',
@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             name: 'KTM 125 Dude',
             images: [
-                '/Images/dude-1.jpg',
-                '/Images/dude-2.jpg',
-                '/Images/dude-3.jpg'
+                'Images/dude-1.jpg',
+                'Images/dude-2.jpg',
+                'Images/dude-3.jpg'
             ],
             description: [],
             kilometers: '23 625',
