@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             name: 'BMW M1000RR',
             images: [
-                '/Images/BMW-1000-1.jpg',
-                '/Images/BMW-1000-2.jpg',
-                '/Images/BMW-1000-3.jpg'
+                'BMW-1000-1.jpg',
+                'BMW-1000-2.jpg',
+                'BMW-1000-3.jpg'
             ],
             description: [
                 'capot de selle',
@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             name: 'Indian 1200 FTR',
             images: [
-                '/Images/indian-1200-1.jpg',
-                '/Images/indian-1200-2.jpg',
-                '/Images/indian-1200-3.jpg'
+                'indian-1200-1.jpg',
+                'indian-1200-2.jpg',
+                'indian-1200-3.jpg'
             ],
             description: [],
             date: '09/2021',
@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             name: 'Suzuki Savage LS650',
             images: [
-                '/Images/suzuki-ls650-1.jpg',
-                '/Images/suzuki-ls650-2.jpg',
-                '/Images/suzuki-ls650-3.jpg'
+                'suzuki-ls650-1.jpg',
+                'suzuki-ls650-2.jpg',
+                'suzuki-ls650-3.jpg'
             ],
             description: [],
             date: '1997',
@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             name: 'Guzzi V7 II spécial',
             images: [
-                'Images/guzzi-1.jpg',
-                'Images/guzzi-2.jpg',
-                'Images/guzzi-3.jpg'
+                'guzzi-1.jpg',
+                'guzzi-2.jpg',
+                'guzzi-3.jpg'
             ],
             description: ['rétroviseur embout de guidon', 'guidon LSL', 'selle mono (moto guzzi) origine disponible'],
             kilometers: '15 306',
@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             name: 'KTM 125 Dude',
             images: [
-                'Images/dude-1.jpg',
-                'Images/dude-2.jpg',
-                'Images/dude-3.jpg'
+                'dude-1.jpg',
+                'dude-2.jpg',
+                'dude-3.jpg'
             ],
             description: [],
             kilometers: '23 625',
