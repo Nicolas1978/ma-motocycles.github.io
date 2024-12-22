@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             name: 'BMW M1000RR',
             images: [
-                'images/BMW-1000-1.jpg',
-                'images/BMW-1000-2.jpg',
-                'images/BMW-1000-3.jpg'
+                '/images/BMW-1000-1.jpg',
+                '/images/BMW-1000-2.jpg',
+                '/images/BMW-1000-3.jpg'
             ],
             description: [
                 'capot de selle',
@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             name: 'Indian 1200 FTR',
             images: [
-                'images/indian-1200-1.jpg',
-                'images/indian-1200-2.jpg',
-                'images/indian-1200-3.jpg'
+                '/images/indian-1200-1.jpg',
+                '/images/indian-1200-2.jpg',
+                '/images/indian-1200-3.jpg'
             ],
             description: [],
             date: '09/2021',
@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             name: 'Suzuki Savage LS650',
             images: [
-                'images/suzuki-ls650-1.jpg',
-                'images/suzuki-ls650-2.jpg',
-                'images/suzuki-ls650-3.jpg'
+                '/images/suzuki-ls650-1.jpg',
+                '/images/suzuki-ls650-2.jpg',
+                '/images/suzuki-ls650-3.jpg'
             ],
             description: [],
             date: '1997',
@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             name: 'Guzzi V7 II spécial',
             images: [
-                'images/guzzi-1.jpg',
-                'images/guzzi-2.jpg',
-                'images/guzzi-3.jpg'
+                '/images/guzzi-1.jpg',
+                '/images/guzzi-2.jpg',
+                '/images/guzzi-3.jpg'
             ],
             description: ['rétroviseur embout de guidon', 'guidon LSL', 'selle mono (moto guzzi) origine disponible'],
             kilometers: '15 306',
@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             name: 'KTM 125 Dude',
             images: [
-                'images/dude-1.jpg',
-                'images/dude-2.jpg',
-                'images/dude-3.jpg'
+                '/images/dude-1.jpg',
+                '/images/dude-2.jpg',
+                '/images/dude-3.jpg'
             ],
             description: [],
             kilometers: '23 625',
