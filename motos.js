@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             name: 'KTM 125 Dude',
             images: [
-                './Images/dude-1.jpg',
-                './Images/dude-2.jpg',
-                './Images/dude-3.jpg'
+                '/Images/dude-1.jpg',
+                '/Images/dude-2.jpg',
+                '/Images/dude-3.jpg'
             ],
             description: [],
             kilometers: '23 625',
